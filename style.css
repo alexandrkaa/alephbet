@@ -1,0 +1,44 @@
+.letter {
+  text-align: center;
+  font-size: 100px;
+  margin: 10px 0;
+}
+
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.answer-list {
+  list-style: none;
+  margin: 0 auto;
+  font-size: 25px;
+  padding: 0;
+}
+
+.submit {
+  max-width: 100px;
+  background-color: beige;
+  border: 1px solid goldenrod;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+@keyframes shake {
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
