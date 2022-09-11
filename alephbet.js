@@ -2,6 +2,8 @@ const elLetter = document.getElementById(`letter`);
 const form = document.getElementById(`answer-form`);
 const elAnswerList = document.getElementById(`answer-list`);
 const ANSWERS_NUM = 5;
+const REPEAT_MODE = true;
+let isRepeatRound = true;
 
 const getLettersSet = () => {
   const result = {};
@@ -57,7 +59,16 @@ form.addEventListener(`submit`, (evt) => {
   if (selected.value === lettersSet.currentLetter.l) {
     elLetter.innerHTML = `ניצחון`;
     setTimeout(() => {
-      lettersSet = getLettersSet();
+      if (REPEAT_MODE) {
+        if (!isRepeatRound) {
+          lettersSet = getLettersSet();
+          isRepeatRound = true;
+        } else {
+          isRepeatRound = false;
+        }
+      } else {
+        lettersSet = getLettersSet();
+      }
       renderQuiz(lettersSet);
     }, 1500);
   } else {
