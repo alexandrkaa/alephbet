@@ -57,7 +57,7 @@ form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();
   const selected = form.querySelector(`input:checked`);
   if (selected.value === lettersSet.currentLetter.l) {
-    elLetter.innerHTML = `ניצחון`;
+    elLetter.innerHTML = `Верно`;
     setTimeout(() => {
       if (REPEAT_MODE) {
         if (!isRepeatRound) {
