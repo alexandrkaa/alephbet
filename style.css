@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "DanaYadAlefAlefAlef";
+  font-style: normal;
+  font-weight: 400;
+  src: local("DanaYadAlefAlefAlef-Normal"), url("fonts/DanaYadAlefAlefAlef-Normal.eot") format("eot");
+}
+
 .letter {
   text-align: center;
   font-size: 100px;
   margin: 10px 0;
+  font-family: "DanaYadAlefAlefAlef", Arial, Helvetica, sans-serif;
 }
 
 .answer-form {
