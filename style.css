@@ -2,7 +2,8 @@
   font-family: "DanaYadAlefAlefAlef";
   font-style: normal;
   font-weight: 400;
-  src: local("DanaYadAlefAlefAlef-Normal"), url("fonts/DanaYadAlefAlefAlef-Normal.eot") format("eot");
+  src: local("DanaYadAlefAlefAlef-Normal"), url("./fonts/DanaYadAlefAlefAlef-Normal.eot") format("eot"),
+    url("./fonts/DanaYadAlefAlefAlef-Normal.woff") format("woff");
 }
 
 .letter {
