@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo" />
+    <style>
+      body {
+        font-family: "Arimo", serif;
+        font-size: 48px;
+      }
+    </style>
+    <title>Alephbet trainer dict</title>
+  </head>
+    <h1 id="letter" class="letter"></h1>
+    <form id="font" class="answer-form">
+      <h3 class="letter letter--small">Шрифт</h3>
+      <ul class="answer-list">
+        <li>
+          <label><input checked="checked" type="radio" name="font" value="print" /><span>Печатный</span></label>
+        </li>
+        <li>
+          <label><input type="radio" name="font" value="handwrite" /><span>Рукописный</span></label>
+        </li>
+      </ul>
+    </form>
+    <form id="type" class="answer-form">
+      <h3 class="letter letter--small">Что учим?</h3>
+      <ul class="answer-list">
+        <li>
+          <label><input checked="checked" type="radio" name="type" value="letters" /><span>Написание</span></label>
+        </li>
+        <li>
+          <label><input type="radio" name="type" value="names" /><span>Название</span></label>
+        </li>
+      </ul>
+    </form>
+    <script src="dict-short.js"></script>
+    <!-- <script src="dict.js"></script> -->
+    <script src="utils.js"></script>
+    <script src="alephbet-dict.js"></script>
+  </body>
+</html>

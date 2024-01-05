@@ -2,8 +2,11 @@ const elLetter = document.getElementById(`letter`);
 const form = document.getElementById(`answer-form`);
 const elAnswerList = document.getElementById(`answer-list`);
 const ANSWERS_NUM = 5;
-const REPEAT_MODE = true;
+let REPEAT_MODE = false;
 let isRepeatRound = true;
+const repeats = document.getElementById(`repeats`);
+let repeatsSelected = repeats.querySelector(`input:checked`)?.value;
+REPEAT_MODE = repeatsSelected == 0 ? false : true;
 
 const getLettersSet = () => {
   const result = {};
@@ -56,6 +59,8 @@ let lettersSet = getLettersSet();
 form.addEventListener(`submit`, (evt) => {
   evt.preventDefault();
   const selected = form.querySelector(`input:checked`);
+  const repeatsSelected = repeats.querySelector(`input:checked`)?.value;
+  REPEAT_MODE = repeatsSelected == 0 ? false : true;
   if (selected.value === lettersSet.currentLetter.l) {
     elLetter.innerHTML = `Верно`;
     setTimeout(() => {

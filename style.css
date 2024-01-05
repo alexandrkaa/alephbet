@@ -11,6 +11,10 @@
   margin: 10px 0;
 }
 
+.letter--small {
+  font-size: 25px;
+}
+
 .letter--handwrite {
   font-family: "DanaYadAlefAlefAlef", Arial, Helvetica, sans-serif;
 }

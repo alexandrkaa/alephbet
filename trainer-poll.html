@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo" />
+    <style>
+      body {
+        font-family: "Arimo", serif;
+        font-size: 48px;
+      }
+    </style>
+    <title>Alephbet trainer</title>
+  </head>
+  <body>
+    <h1 id="letter" class="letter"></h1>
+    <form id="answer-form" class="answer-form">
+      <ul id="answer-list" class="answer-list"></ul>
+      <button class="submit" type="submit">אישור</button>
+    </form>
+    <form id="repeats" class="answer-form">
+      <h3 class="letter letter--small">Повторы</h3>
+      <ul class="answer-list">
+        <li>
+          <label><input checked="checked" type="radio" name="repeats" value="0" /><span>1</span></label>
+        </li>
+        <li>
+          <label><input type="radio" name="repeats" value="1" /><span>2</span></label>
+        </li>
+      </ul>
+    </form>
+    <script src="dict.js"></script>
+    <script src="utils.js"></script>
+    <script src="alephbet.js"></script>
+  </body>
+</html>
