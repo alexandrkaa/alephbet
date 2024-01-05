@@ -47,6 +47,6 @@ const toNextLetter = (evt) => {
 }
 
 document.addEventListener(`keypress`, toNextLetter);
-document.addEventListener(`touchstart`, (evt) => { alert(111) });
+document.addEventListener(`touchstart`, toNextLetter);
 
 
