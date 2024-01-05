@@ -31,7 +31,7 @@ typeForm.addEventListener('change', (evt) => {
   }
 });
 
-document.addEventListener('keypress', (evt) => {
+const toNextLetter = (evt) => {
   evt.preventDefault();
   elLetter.innerHTML = letter[letterView.hidden];
   setTimeout(() => {
@@ -44,5 +44,9 @@ document.addEventListener('keypress', (evt) => {
     dictCopy = cutLetter(dictCopy, letterRnd);
     elLetter.innerHTML = letter[letterView.visible]
   }, 1000);
-})
+}
+
+document.addEventListener(`keypress`, toNextLetter);
+document.addEventListener(`touchstart`, (evt) => { alert(111) });
+
 
