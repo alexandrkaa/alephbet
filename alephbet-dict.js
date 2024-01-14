@@ -43,7 +43,7 @@ const toNextLetter = (evt) => {
     letter = dictCopy[letterRnd];
     dictCopy = cutLetter(dictCopy, letterRnd);
     elLetter.innerHTML = letter[letterView.visible]
-  }, 1000);
+  }, 2000);
 }
 
 document.addEventListener(`keypress`, toNextLetter);
